@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt|Macondo|Indie+Flower|Tapestry|Righteous|Yanone+Kaffeesatz|Pacifico|Source+Serif+Pro|Lora|Aclonica');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*staring of the header*/
+
+#background{
+    min-height: 100vh;
+    justify-content: center;
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0.5)),url('tutle.jpg') ;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+
+nav{
+    background-color:transparent;
+
+}
+nav h1{
+    font-size: 30px;
+    font-family:Rock Salt,Macondo ;
+    float: left;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+
+#menu{
+    font-family: Tapestry;
+    font-size: 16px;
+}
+
+#menu ul{
+    list-style: none;
+    display: inline-flex;
+    margin-left: 200px;
+    margin-top: 10px;
+
+}
+
+
+#menu ul li{
+    margin-top: 10px;
+}
+
+
+#menu ul li:hover{
+    background-color: black;
+    border-radius: 5px;
+    transition: .5s;
+}
+#menu ul li a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+ #sub-menu{
+    display: none;
+ }
+
+ #menu ul li:hover #sub-menu{
+    display:block;
+    position: absolute;
+    background-color: transparent;
+ }
+
+ #menu ul li:hover #sub-menu ul{
+    display: block;
+    margin: 10px;
+ }
+
+#menu ul li:hover #sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted black;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+#menu ul li:hover #sub-menu ul li:last-child{
+    border-bottom: none;
+}
+
+#menu ul li:hover #sub-menu ul li a:hover{
+
+    color:black;
+}
+
+
+
+/*ending of the header*/
+
+/*main heading*/
+
+h2{
+    font-family: Aclonica;
+    font-size: 70px;
+    margin-top:200px;
+    
+}
+
+
+h3{
+    font-family: Aclonica;
+    font-size: 50px;
+    color:rgb(0,128,128) ;
+    margin-top: 40px;
+}
+
+
+section{
+    background-color: transparent;
+    color: black;
+    animation-name: x;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes x{
+    0%{color: rgb(0,128,128);}
+    25%{color:rgb(64,224,208);}
+    50%{color: rgb(25,25,112);}
+    75%{color: rgb(111,163,255);}
+    100%{color: rgb(0,204,255);}
+    }
+
+/*main heading ending*/
+
+/*staring of the discription*/
+
+#first{
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left: 200px;
+    text-align: justify;
+    font-family: 'Source Serif Pro';
+    font-size: 17px;
+    color: black;
+}
+
+#second{
+    margin-left: 200px;
+    margin-right: 200px;
+    color: black;
+}
+
+
+h4{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Source Serif Pro';
+    background-color: rgb(64,224,208);
+    border-radius: 125px;
+    width: 500px;
+    margin-left: 150px;
+    color: #000;
+}
+
+
+#second p{
+    
+    font-family: 'Source Serif Pro';
+    font-size: 17px;
+    margin-top: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #000;
+
+}
+
+
+#photo_1 img{
+    width: 500px;
+    filter: drop-shadow(5px 5px  10px black);
+}
+
+h5{
+    font-size: 17px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Source Serif Pro';
+    margin-left: 200px;
+    color: #000;
+
+}
+
+#list ul li{
+    font-size: 17px;
+    font-family: 'Source Serif Pro';
+    margin-top: 15px;
+    margin-left: 250px;
+    text-align: justify;
+    color: #000;
+    
+
+}
+
+#list_2 ol li{
+    font-size: 17px;
+    font-family: 'Source Serif Pro';
+    margin-top: 15px;
+    margin-left: 200px;
+    text-align: justify;
+    margin-right: 200px; 
+    float: left;  
+    color: #000;
+}
+#list_2{
+    margin-bottom: 30px;
+}
+
+
+#photo_2{
+    margin-top: 15px;
+    float: left;
+    margin-left: 320px;
+    margin-bottom: 30px;
+    filter: drop-shadow(5px 5px  10px black);
+}
+
+#photo_3{
+    margin-top: 15px;
+    margin-right: 320px;
+    float: right;
+    margin-bottom: 30px;
+    filter: drop-shadow(5px 5px  10px black);
+}
+
+
+h6{
+    margin-top: 830px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Source Serif Pro';
+    background-color: rgb(64,224,208);
+    border-radius: 125px;
+    width: 600px;
+    margin-left: 150px;
+    color: #000;
+}
+
+
+#third p{
+    font-family: 'Source Serif Pro';
+    font-size: 17px;
+    margin-top: 15px;
+    text-align: justify;
+    margin-left: 200px;
+    margin-right: 200px;  
+    color: #000; 
+}
+
+
+#photo_4{
+    margin-top: 20px;
+    filter: drop-shadow(5px 5px  10px black);
+}
+
+
+#list_3 ul li{
+    font-size: 17px;
+    font-family: 'Source Serif Pro';
+    margin-top: 15px;
+    margin-left: 250px;
+    text-align: justify;
+    margin-right: 250px; 
+    color: #000;
+
+}
+
+span{
+    font-weight: bold;
+    color: #000;
+}
+
+
+#third{
+    margin-bottom: 20px;
+    color: #000;
+}
+
+#fourth{
+    font-family: 'Source Serif Pro';
+    font-size: 17px;
+    margin-top: 15px;
+    text-align: justify;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+    color: #000;
+}
+
+
+/*ending of the discription*/
+
+/*photo gallery styles starts*/
+
+#photo_gallery h5{
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-right: 200px;
+    background-color:rgb(64,224,208); ;
+}
+
+
+.part_1{
+   
+    margin-left: 35px;
+    cursor: pointer;
+    
+}
+
+.part_1 img{
+    transition: transform 0.5s; 
+}
+
+.part_1 img:hover{
+    transform: translateY(-10px);
+}
+
+ img{
+    border: 3px solid black;
+    
+}
+.image1{
+    float: left;
+    margin-top: 35px;
+    filter: drop-shadow(5px 5px  10px black);
+}
+
+
+.image2{
+    float: left;
+    margin-left: 15px;
+    filter: drop-shadow(5px 5px  10px black);
+}
+
+
+.image3{
+    float: left;
+    margin-left: 15px;
+    filter: drop-shadow(5px 5px  10px black);
+}
+
+
+.image4{
+    float: left;
+    margin-left: 15px;
+    margin-top: 50px;
+    filter: drop-shadow(5px 5px  10px black);
+}
+
+
+.image5{
+    float: right;
+    margin-right: 35px;
+    margin-top: 15px;
+    filter: drop-shadow(5px 5px  10px black);
+}
+.image6{
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+    filter: drop-shadow(5px 5px  10px black);
+}
+
+.image7{
+    float: right;
+    margin-top: 15px;
+    margin-right: 15px;
+    filter: drop-shadow(5px 5px  10px black);
+}
+
+
+
+.image8{
+    float: left;
+    margin-top: 15px;
+    filter: drop-shadow(5px 5px  10px black);
+}
+
+.image9{
+    margin-top: 15px;
+    float: left;
+    filter: drop-shadow(5px 5px  10px black);
+}
+
+.image10{
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+    filter: drop-shadow(5px 5px  10px black);
+}
+
+.image11{
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+    filter: drop-shadow(5px 5px  10px black);
+}
+.image12{
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    filter: drop-shadow(5px 5px  10px black);
+}
+
+
+
+/*photo gallery styles ends*/
+
+#go{
+    margin-top: 1200px;
+    margin-left: 30px;
+    width: 100px;
+    background-color: #00151e;
+    text-align: center;
+    border-radius: 100px;
+}
+#go a{
+    text-decoration: none;
+    font-family: 'Source Serif Pro';
+    font-size: 15px;
+    color:rgb(29, 162, 149);
+    
+    
+}
+
+/*starting of the footer*/
+
+footer h1{
+    color: black;
+    font-size: 30px;
+    font-family:Rock Salt,Macondo ;
+    font-weight: bold;  
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+ footer{
+    margin-top: 100px;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to right,rgb(29, 162, 149), #00151e);
+    border-top-left-radius:125px ;
+}
+
+
+#details{
+    color: black;
+    font-family: 'Source Serif Pro';
+    font-weight: bold;
+    
+}
+#symbols img{
+    border: transparent;
+}
+
+#footer_bottom{
+    margin-top: 15px;
+    color: #fff;
+    margin-bottom: 15px;
+    background-color: #00151e;
+}
+
+/*ending of the footer*/
+
+/* @media styles for phones*/
+
+@media screen and(max-width:700px) {
+    #background{
+        width: 100%;
+    }
+}
+
+@media screen and ( max-width: 700px) {
+    nav h1 {
+        margin-top: 20px;
+        font-size: 17px;
+        float: left;
+        display: block;
+        margin-left: 20px;
+
+    }
+  }
+
+  @media screen and ( max-width: 700px) {
+    #menu ul {
+      float: left;
+      display: block;
+
+    }
+  }
+
+  @media screen and ( max-width: 700px) {
+    #menu ul li:hover #sub-menu ul{
+        float: left;
+        margin-left: 160px;
+        display: block;
+    }
+  }
+
+@media screen and ( max-width: 700px) {
+    h2 {
+      font-size: 65px;
+      margin-top: 0px;
+    }
+  }
+
+@media screen and ( max-width: 700px) {
+    h3{
+        font-size: 40px;
+    }
+}
+
+@media screen and ( max-width: 700px) {
+    #first, #second{
+        margin-right: 40px;
+        margin-left: 40px;
+        font-size: 15px;
+    }
+  }
+
+@media screen and ( max-width: 700px) {
+  h4{
+    font-size: 17px;
+    margin-left: 40px;
+    width: 350px;
+  }
+  }
+
+
+@media screen and ( max-width: 700px) {
+    #photo_1 img{
+      margin-left: 10px;
+      width: 300px;
+    }
+    }
+
+@media screen and ( max-width: 700px) {
+    h5{
+      margin-left: 10px;
+      font-size: 15px;
+    }
+    }
+
+@media screen and ( max-width: 700px) {
+    #photo_2{
+      margin-left: 20px;
+    }
+    }
+
+    @media screen and ( max-width: 700px) {
+        #photo_2 img{
+          width: 350px;
+          height: 200px;
+        }
+        }
+
+@media screen and ( max-width: 700px) {
+        #photo_3 img{
+          width: 250px;
+          height: 200px;
+        }
+        }
+
+ @media screen and ( max-width: 700px) {
+            #photo_3 {
+              float: right;
+              margin-right: 50px;
+            }
+            }
+
+
+@media screen and ( max-width: 700px) {
+    h6{
+      font-size: 17px;
+      width: 360px;
+      margin-left: 10px;
+      margin-top: 800px;
+      background-color: transparent;
+
+    }
+    }
+
+    
+@media screen and ( max-width: 700px) {
+    #second p, #third p{
+      font-size: 15px; 
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    }
+@media screen and ( max-width: 700px) {
+    #photo_4 img{
+      margin-left: 10px;
+      width: 300px;
+    }
+    }
+
+@media screen and ( max-width: 700px) {
+    #list ul li, #list_2 ol li, #list_3 ul li{
+      font-size: 15px;
+      margin-left: 40px;
+      margin-right: 40px;
+
+    }
+    }
+
+@media screen and ( max-width: 700px) {
+    #third,#fourth{
+      font-size: 15px;
+      margin-left: 40px;
+      margin-right: 40px;
+
+    }
+    }
+
+@media screen and ( max-width: 700px) {
+    #photo_gallery h5{
+      font-size: 17px;
+      margin-left: 100px;
+      width: 200px;
+    }
+      }
+  
+
+@media screen and ( max-width:700px ) {
+    .image1, .image2, .image3, .image4{
+        margin-left: 20px;
+        margin-bottom : 15px;
+        display: flex;
+    }
+}
+
+@media screen and ( max-width: 700px) {
+    .image2 img{
+        width: 300px;
+    }
+    }
+
+@media screen and ( max-width:700px ) {
+    .image4 img{
+        width: 300px;
+
+    }
+}
+
+
+@media screen and ( max-width:700px ) {
+    .image5 img{
+        width: 300px;
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and ( max-width:700px ) {
+    .image6 img{
+        width: 300px;
+        
+    }
+}
+
+
+@media screen and ( max-width:700px ) {
+    .image7 img{
+        width: 300px;
+    
+    }
+}
+
+
+@media screen and ( max-width:700px ) {
+    .image8 img{
+        width: 300px;
+        margin-left: 20px;
+    }
+}
+
+
+@media screen and ( max-width:700px ) {
+    .image9 img{
+        width: 300px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and ( max-width: 700px) {
+    .image10 img{
+      width: 300px;
+    }
+    }
+
+    
+@media screen and ( max-width:700px ) {
+    .image12 img{
+        width: 300px;
+    }
+}
+
+
+
+@media screen and ( max-width:700px ) {
+    #go{
+        margin-top: 3200px;
+    }
+    
+}
+
+
+
