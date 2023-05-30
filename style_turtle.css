@@ -1,0 +1,765 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt|Macondo|Indie+Flower|Tapestry|Righteous|Yanone+Kaffeesatz|Pacifico|Aclonica|Source+Serif+Pro');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*header*/
+
+#background{
+    min-height: 100vh;
+    justify-content: center;
+    position: relative;
+    background-image:url('./turtle4.jpg') ;
+    background-attachment: fixed;
+    background-size: cover;
+}
+    
+nav{
+    background-color:transparent;
+
+
+}
+nav h1{
+
+    font-size: 30px;
+    font-family:Rock Salt,Macondo ;
+    float: left;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #000;
+}
+
+
+#menu{
+    font-family: Tapestry;
+    font-size: 16px;
+}
+
+#menu ul{
+    list-style: none;
+    display:inline-flex;
+    margin-left: 200px;
+    margin-top: 10px;
+
+}
+#menu ul li{
+    margin-top: 10px;
+}
+
+
+#menu ul li:hover{
+    background-color: black;
+    border-radius: 5px;
+    transition: .5s;
+}
+#menu ul li a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+ #sub-menu{
+    display: none;
+ }
+
+ #menu ul li:hover #sub-menu{
+    display:block;
+    position: absolute;
+    background-color: transparent;
+ }
+
+ #menu ul li:hover #sub-menu ul{
+    display: block;
+    margin: 10px;
+ }
+
+#menu ul li:hover #sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted black;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+#menu ul li:hover #sub-menu ul li:last-child{
+    border-bottom: none;
+}
+
+#menu ul li:hover #sub-menu ul li a:hover{
+
+    color:black;
+}
+
+/*header end*/
+
+/*main heading*/
+h2{
+    font-family: Aclonica;
+    font-size: 70px;
+    margin-top:250px;
+}
+section{
+    background-color: transparent;
+    color: black;
+    animation-name: x;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes x{
+    0%{color: rgb(139,63,0);}
+    25%{color:rgb(191,127,47);}
+    50%{color: rgb(152,81,10);}
+    75%{color: rgb(109,50,0);}
+    100%{color: rgb(212,149,70);}
+}
+
+ /*main heading end*/
+
+
+/*about turtles intoduction styles*/
+#part1{
+    margin-top: 100px;
+}
+#photo_5{
+    height: auto;
+    filter: drop-shadow(50px 50px 100px black);
+    margin-left: 70px;
+}
+
+
+#part1 p{
+    float: right;
+    width: 700px;
+    text-align: justify;
+    margin-right: 70px;
+    font-family: 'Source Serif Pro';
+    font-size: 17px;
+    color: #000;
+    margin-top: 60px;
+
+}
+
+
+h3{
+    margin-top: 50px;
+    font-family:'Source Serif Pro' ;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    color: #000;
+
+}
+
+h2:before{
+    content: "";
+    display: block;
+    width: 500px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    left: 50pt;
+    top:109%;
+}
+
+
+h2:after{
+    content: "";
+    display: block;
+    width: 500px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    right: 50pt;
+    top: 109%;
+
+}
+
+
+
+
+ h5{
+    margin-top: 80px;
+    font-family:'Source Serif Pro' ;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    float: right;
+    margin-right: 350px;
+    color: #000;
+ }
+
+
+ h3::before{
+    content: "";
+    display: block;
+    right: 480pt;
+    width: 200px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    margin-top: 570px;
+
+ }
+  h3::after{
+    content: "";
+    display: block;
+    right: 100pt;
+    width: 200px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    margin-top: 532px;
+
+
+ }
+
+ #map_1{
+    margin-left: 450px;
+    margin-top: 150px;
+
+ }
+
+
+ #container{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    background: white;
+    align-items: center;
+}
+
+ #container_1{
+    display: flex;
+ }
+
+#card{
+    height: 400px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+
+
+#photoes img{
+    height: 400px;
+    width: 350px;
+    border-radius: 3px;
+    transition: .5s;
+
+}
+
+
+#intro{
+    height: 50px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 290%;
+    background: rgb(27,27,27, 0.5);
+    color: white;
+    font-family:"Source Serif Pro" ;
+    transition: .5s;
+}
+
+
+h4{
+    margin: 5px;
+    font-size: 25px;
+}
+
+ 
+#intro p{
+    font-size: 14px;
+    margin: 5px;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+
+#intro p span{
+    font-weight: bold;
+}
+
+#card:hover{
+    cursor: pointer;
+}
+
+#card:hover #intro{
+    height: 204px;
+    background: #000;
+
+}
+
+#card:hover #intro p{
+    opacity: 1;
+    visibility: visible;
+}
+
+#card:hover #photoes img{
+    transform: scale(1.1) rotate(-3deg);
+} 
+
+#container_a{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    background: white;
+    align-items: center;
+ }
+
+ #container_2{
+    display: flex;
+ }
+ #card_1{
+    height: 400px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+#photoes_2 img{
+    height: 400px;
+    width: 350px;
+    border-radius: 3px;
+    transition: .5s;
+
+}
+
+#intro_2{
+    height: 50px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 370%;
+    background: rgb(27,27,27, 0.5);
+    color: white;
+    font-family:"Source Serif Pro" ;
+    transition: .5s;
+}
+
+h6{
+    margin: 5px;
+    font-size: 25px;
+}
+
+#intro_2 p{
+    font-size: 14px;
+    margin: 5px;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+#intro_2 p span{
+    font-weight: bold;
+}
+
+#card_1:hover{
+    cursor: pointer;
+}
+
+#card_1:hover #intro_2{
+    height: 204px;
+    background: #000;
+
+}
+
+#card_1:hover #intro_2 p{
+    opacity: 1;
+    visibility: visible;
+}
+
+#card_1:hover #photoes_2 img{
+    transform: scale(1.1) rotate(-3deg);
+} 
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px ;
+    border-radius: 25px;
+    font-weight:bold ;
+    border: 2px solid #000;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.button span{
+    background: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+
+button:hover{
+    border: none;
+    background-color: rgb(212,149,70);
+    color: rgb(109,50,0);
+}
+
+.part_a h5{
+    float: left;
+    margin-left: 100px;
+    color: #000;
+}
+
+
+.part_a p{
+    float: right;
+    margin-top: 30px;
+    text-align: justify;
+    width: 700px;
+    margin-top: 120px;
+    font-family:"Source Serif Pro" ;
+    font-size: 17px;
+    margin-right: 150px;
+    color: #000;
+}
+
+.image_a img{
+    margin-top: 20px;
+    margin-left: 150px;
+    border: 3px solid black;
+}
+
+.map_heading h5{
+    font-size: 17px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #000;
+
+}
+
+.map_2 iframe{
+    margin-top: 10px;
+}
+
+/*about turtles intoduction styles end*/
+
+
+/*table styles*/
+
+.table_start{
+    float: right;
+    margin-right: 25px;
+    margin-top: 150px;
+    font-family: "Source Serif Pro";
+    font-size: 17px;
+    color: #000;
+}
+
+.table_start table{
+    text-align: center;
+    padding: 5px;
+
+}
+
+.table_start table thead{
+    background-color: #00151e;
+    color: #fff;
+}
+
+.table_start table thead tr{
+    height: 50px;
+}
+
+.table_start table tbody td{
+    width: 260px;
+}
+
+
+
+/*table styles end*/
+
+
+#go{
+    margin-top: 1600px;
+    margin-left: 30px;
+    width: 100px;
+    background-color: #00151e;
+    text-align: center;
+    border-radius: 100px;
+}
+#go a{
+    text-decoration: none;
+    font-family: 'Source Serif Pro';
+    font-size: 15px;
+    color:rgb(29, 162, 149);
+    
+    
+}
+
+
+/*footer styles*/
+
+footer h1{
+    color: black;
+    font-size: 30px;
+    font-family:Rock Salt,Macondo ;
+    font-weight: bold;  
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+ footer{
+    width: 100%;
+    margin-top: 100px;
+    position: absolute;
+    background: linear-gradient(to right,rgb(29, 162, 149), #00151e);
+    color: #fff;
+    border-top-left-radius:125px ;
+}
+
+
+#details{
+    color: black;
+    font-family: 'Source Serif Pro';
+    font-weight: bold;
+    
+}
+
+#footer_bottom{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #00151e;
+}
+
+/*footer styles end*/
+
+
+/* @media styles for phones*/
+
+@media screen and(max-width:700px) {
+    #background{
+        width: 100%;
+    }
+}
+
+@media screen and ( max-width: 700px) {
+    nav h1 {
+        margin-top: 20px;
+        font-size: 17px;
+        float: left;
+        display: block;
+        margin-left: 20px;
+
+    }
+  }
+
+  @media screen and ( max-width: 700px) {
+    #menu ul {
+      float: left;
+      display: block;
+
+    }
+  }
+
+  @media screen and ( max-width: 700px) {
+    #menu ul li:hover #sub-menu ul{
+        float: left;
+        margin-left: 160px;
+        display: block;
+    }
+  }
+
+@media screen and ( max-width: 700px) {
+    h2 {
+      font-size: 65px;
+      margin-top: 0px;
+    }
+  }
+
+  
+@media screen and ( max-width: 700px) {
+    #card, #card_1 {
+      height: 300px;
+      margin: 2px
+    }
+  }
+@media screen and ( max-width: 700px) {
+    #photoes img, #photoes_2 img{
+      height: 300px;
+      width: 130px;
+    }
+  }
+@media screen and ( max-width: 700px) {
+    #intro {
+      width: 130px;
+      top: 290%;
+    }
+  }
+
+@media screen and ( max-width: 700px) {
+    #intro_2 {
+      width: 130px;
+      top: 370%;
+    }
+  }
+
+
+@media screen and ( max-width: 700px) {
+    #intro p, #intro_2 p{
+      font-size: 10px;
+    }
+  }
+@media screen and ( max-width: 700px) {
+    #card:hover #intro {
+      height: 250px;
+    }
+  }
+
+@media screen and ( max-width: 700px) {
+    #card_1:hover #intro_2{
+        height: 300px;
+    }
+}
+
+
+  @media screen and ( max-width: 700px) {
+    h6{
+      font-size: 17px;
+    }
+  }
+
+  
+ 
+ 
+@media screen and ( max-width: 700px) {
+    #photo_5 img {
+        width: 250px;
+        margin-top: 15px;
+        float:right;
+        margin-right: 80px;
+    }
+  }
+
+@media screen and ( max-width: 700px) {
+    #part1 p {
+      font-size: 15px;
+      margin-top: 0px;
+      width: 370px;
+      margin-right: 10px;
+        
+  }
+
+}
+@media screen and ( max-width: 700px) {
+    h2::before, h2::after {
+      width: 200px;
+      top: 120%;
+    }
+  }
+ @media screen and ( max-width: 700px) {
+    h5 {
+      margin-right: 135px;
+      margin-top: 30px;
+      font-size: 17px;
+      width: 150px;
+      text-align: center;
+    }
+  }
+ @media screen and ( max-width: 700px) {
+    h3::before, h3::after {
+      width: 100px;
+      top: 500%;
+      margin-right: 25px;
+    }
+  }
+
+ @media screen and ( max-width: 700px) {
+    #map_1 {
+      margin-left: 60px;
+
+    }
+  }
+
+  @media screen and ( max-width: 700px) {
+    #map_1 iframe {
+        margin-top: 50px;
+      width: 300px;
+      height: 200px;
+    }
+  }
+
+@media screen and ( max-width: 700px) {
+    h4{
+      font-size: 17px;
+    }
+  }
+
+
+  @media screen and ( max-width: 700px) {
+    .part_a h5{
+        margin-left: 50px;
+    }
+}
+
+@media screen and ( max-width: 700px) {
+    .part_a p{
+        margin-top: 2px;
+        font-size: 15px;
+        width: 380px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and ( max-width: 700px) {
+    .image_a img{
+        width: 200px;
+        margin-left: 80px;
+    }
+}
+@media screen and ( max-width: 700px) {
+    .map_heading h5{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and ( max-width: 700px) {
+    .map_2 iframe{
+        width: 300px;
+    }
+}
+
+
+
+@media screen and ( max-width: 700px) {
+    .table_start{
+        margin-left: 20px;
+        font-size: 8px;
+    }
+}
+@media screen and ( max-width: 700px) {
+    .table_start table tbody td{
+        width: 150px;
+    }
+}
+
+@media screen and ( max-width:700px) {
+    .table_start table tbody td img{
+        width: 70px;
+    }
+    
+}

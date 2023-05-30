@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt|Macondo|Indie+Flower|Tapestry|Righteous|Yanone+Kaffeesatz|Pacifico|Source+Serif+Pro|Lora|Aclonica');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(49, 46, 46);
+    
+}
+
+
+/*header styles*/
+
+nav{
+    background-color:transparent;
+
+}
+nav h1{
+    font-size: 30px;
+    font-family:Rock Salt,Macondo ;
+    float: left;
+    margin-left: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+#menu{
+    font-family: Tapestry;
+    font-size: 16px;
+}
+
+#menu ul{
+    list-style: none;
+    display:inline-flex;
+    margin-left: 200px;
+    margin-top: 10px;
+
+}
+#menu ul li{
+    margin-top: 10px;
+}
+
+
+#menu ul li:hover{
+    background-color: black;
+    border-radius: 5px;
+    transition: .5s;
+}
+#menu ul li a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+ #sub-menu{
+    display: none;
+ }
+
+ #menu ul li:hover #sub-menu{
+    display:block;
+    position: absolute;
+    background-color: transparent;
+ }
+
+ #menu ul li:hover #sub-menu ul{
+    display: block;
+    margin: 10px;
+ }
+
+#menu ul li:hover #sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted black;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+#menu ul li:hover #sub-menu ul li:last-child{
+    border-bottom: none;
+}
+
+#menu ul li:hover #sub-menu ul li a:hover{
+
+    color:black;
+}
+
+/*header styles end*/
+
+/*main heading and image styles*/
+
+h2{
+    font-family: Aclonica;
+    font-size: 70px;
+    margin-top:50px;
+    color: white;
+    margin-left: 70px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(./back3.jpg);
+    -webkit-background-clip : text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0 ;
+    }
+}
+
+.image1{
+    margin-top: 100px;
+}
+
+/*main heading and image styles end*/
+
+/*main intro styles*/
+#part2 p{
+    color: white;
+    font-family: "Source Serif Pro" ;
+    font-size: 17px;
+    margin-top: 50px;
+    float: left;
+    text-align: justify;
+    width: 500px;
+    margin-left: 250px;
+    margin-right: 50px;
+}
+
+
+.map1 iframe{
+    margin-top: 50px;
+}
+
+
+.image2{
+    margin-top: 30px;
+    filter: drop-shadow(50px 50px 200px rgb(250, 175, 175));
+}
+
+
+/*main heading and image styles end*/
+
+/*about hatchery styles*/
+
+h3{
+    color: rgb(230, 150, 150);
+    font-family: "Source Serif Pro" ;
+    font-size: 20px;
+    margin-top: 40px;
+    background-color: #240112;
+    text-align: center;
+
+}
+
+#part3 p{
+    color: white;
+    font-family: "Source Serif Pro" ;
+    font-size: 17px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+#part4 p{
+    color: white;
+    font-family: "Source Serif Pro" ;
+    font-size: 17px;
+    margin-top: 20px;
+    float: left;
+    text-align: justify;
+    width: 500px;
+    margin-left: 250px;
+    margin-right: 50px;
+}
+
+.image3 img{
+    margin-top: 20px;
+}
+
+#part5 h4{
+    font-family: "Source Serif Pro";
+    font-size: 20px;
+    color: rgb(230, 150, 150);
+    font-weight: bold;
+    background-color: #240112;
+    padding: 5px;
+    margin-top: 50px;
+}
+
+#part5 ol li{
+        font-family: "Source Serif Pro";
+        font-size: 17px;
+        color: white;
+        text-align: center;
+        margin-top: 25px;
+        text-decoration: underline;
+}
+
+#part5 p{
+    font-family: "Source Serif Pro";
+    font-size: 17px;
+    color: white;
+    text-align: justify;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 10px;
+}
+
+
+/*about hatchery styles end*/
+
+/*footer styles*/
+
+
+footer h1{
+    color: black;
+    font-size: 30px;
+    font-family:Rock Salt,Macondo ;
+    font-weight: bold;  
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+ footer{
+    margin-top: 300px;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to right,rgb(230, 150, 150), #240112);
+    border-top-left-radius:125px ;
+}
+
+
+#details{
+    color: black;
+    font-family: 'Source Serif Pro';
+    font-weight: bold;
+    
+}
+#symbols img{
+    border: transparent;
+}
+
+#footer_bottom{
+    margin-top: 15px;
+    color: #fff;
+    margin-bottom: 15px;
+    background-color: #240112;
+}
+
+/*footer styles end*/
+
+
+/* @media styles for phones*/
+
+@media screen and(max-width:700px) {
+    #background{
+        width: 100%;
+    }
+}
+
+@media screen and ( max-width: 700px) {
+    nav h1 {
+        margin-top: 20px;
+        font-size: 17px;
+        float: left;
+        display: block;
+        margin-left: 20px;
+
+    }
+  }
+
+  @media screen and ( max-width: 700px) {
+    #menu ul {
+      float: left;
+      display: block;
+
+    }
+  }
+
+  @media screen and ( max-width: 700px) {
+    #menu ul li:hover #sub-menu ul{
+        float: left;
+        margin-left: 160px;
+        display: block;
+    }
+  }
+
+@media screen and ( max-width: 700px) {
+    h2 {
+      font-size: 65px;
+      margin-top: 0px;
+    }
+  }
+
+  @media screen and (max-width:700px) {
+    .map1 iframe{
+        margin-left: 70px;
+        width: 300px;
+    }
+}
+@media screen and (max-width:700px) {
+    .image2 img, .image3 img{
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .image3 img{
+       margin-left: 60px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    #part2 p, #part4 p, #part3 p, #part5 p{
+        font-size: 15px;
+        margin-left: 10px;
+
+        width: 380px;
+    }
+}
