@@ -1,0 +1,938 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt|Macondo|Indie+Flower|Tapestry|Righteous|Yanone+Kaffeesatz|Pacifico|Source+Serif+Pro|Lora|Aclonica');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*staring of the header*/
+
+#background{
+    min-height: 100vh;
+    justify-content: center;
+    position: relative;
+    background-image:url('./images/beach.jpg') ;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+nav h1{
+    font-size: 30px;
+    font-family:Rock Salt,Macondo ;
+    float: left;
+    margin-left: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+
+}
+
+nav{
+    background-image: linear-gradient(rgba(77, 70, 70, 0.5),rgba(77, 70, 70, 0.5));
+    height: 80px;
+
+
+}
+
+#menu{
+    font-family: Tapestry;
+    font-size: 16px;
+}
+
+#menu ul{
+    list-style: none;
+    display:inline-flex;
+    margin-left: 700px;
+    margin-top: 20px;
+    text-transform: uppercase;
+
+}
+#menu ul li{
+    margin-top: 10px;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color:rgb(109,50,0);
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+#menu ul li:hover{
+    background-color: black;
+    border-radius: 5px;
+    transition: .8s;
+}
+
+
+/*main heading*/
+
+
+h2{
+    font-family: Aclonica;
+    font-size: 100px;
+    margin-top:30px;
+    color: rgb(109,50,0);
+    margin-left: 70px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(109,50,0);
+    background: url(./images/back1.jpg);
+    -webkit-background-clip : text;
+    background-position: 0 0;
+    animation: back 40s linear infinite;
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0 ;
+    }
+}
+
+
+ /*main heading end*/
+
+ 
+ 
+ 
+
+
+ /*calendar*/
+
+ #background_6{
+    justify-content: center;
+    align-items: center;
+    display: block;
+    background-image:linear-gradient(rgba(109,50,0),rgba(212,149,70)) ;
+    margin-top: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 30px;
+    border-radius: 20px;
+    font-family:"Source Serif Pro" ;
+ }
+
+
+ #sub_heading1 h3{
+    font-family:"Source Serif Pro";
+    font-size: 30px;
+    font-weight: bolder;
+    color: whitesmoke;
+    background-color:rgb(60, 4, 58) ;
+    padding: 1px;
+    border-radius: 50px;
+    width: 200px;
+    text-align: center;
+ }
+
+.date_heading h5{
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+
+ #para_1{
+    text-align: center;
+    font-size: 20px;
+    color:rgb(60, 4, 58) ;
+    font-weight: bold;
+    border-bottom: 2px solid rgba(109,50,0) ;
+    
+    
+ }
+
+ #calendar_background{
+    background-color: white;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+ }
+
+ .calendar-container {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+}
+
+
+
+#calendar {
+    border: 2px solid rgb(60, 4, 58);
+    color: rgb(60, 4, 58);
+    background-color: rgb(224, 219, 219);
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#button{
+    margin-top: 10px;
+}
+#current-month{
+    font-family: "Source Serif Pro";
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgba(212,149,70) ;
+    background-color:rgba(109,50,0) ;
+    cursor: pointer;
+}
+
+#next-month, #prev-month{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: "Source Serif Pro";
+    font-size: 13px;
+    font-weight: bold;
+    color: rgba(212,149,70) ;
+    background-color:rgba(109,50,0) ;
+}
+
+
+#current-month:hover{
+    border: none;
+    background-color: rgb(212,149,70);
+    color: rgb(109,50,0);
+}
+
+#next-month{
+    float: right;
+}
+
+#current-month{
+    margin-left: 130px;
+}
+
+#next-month:hover{
+    border: none;
+    background-color: rgb(212,149,70);
+    color: rgb(109,50,0);
+}
+
+
+#prev-month:hover{
+    border: none;
+    background-color: rgb(212,149,70);
+    color: rgb(109,50,0);
+}
+
+
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    
+}
+
+
+/* Style for the selected date */
+.calendar-date.selected {
+    background-color: rgb(60, 4, 58);
+    color: white;
+}
+/*calendar styles end*/
+
+/*guests section style*/
+
+ #guests_section{
+    
+    font-family: "Source Serif Pro";
+    background-image:linear-gradient(rgba(109,50,0),rgba(212,149,70)) ;
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    padding: 30px;
+ }
+
+ #background_4{
+    justify-content: center;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 20px;
+ }
+
+#sub_heading2 h3{
+    font-family:"Source Serif Pro";
+    font-size: 30px;
+    font-weight: bolder;
+    color: whitesmoke;
+    background-color:rgb(60, 4, 58) ;
+    padding: 1px;
+    border-radius: 50px;
+    width: 200px;
+    text-align: center;
+}
+
+
+.heading_2 h5{
+    font-size: 25px;
+    text-align: center;
+}
+
+.para_2 p{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(60, 4, 58);
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid rgba(109,50,0) ;
+}
+
+.guest_content1 ,.guest_content2,.guest_content3,.guest_content4,.guest_content5{
+    margin-top: 20px;
+    margin-left: 200px;
+    text-align: justify;
+    
+}
+
+
+.guest_content1 label{
+    width: 50%;
+    color: rgb(68, 33, 7);
+    font-weight: bold;
+    margin: 5px 0;
+    font-family: "Source Serif Pro";
+    font-size: 20px;
+}
+
+.guest_content1 input{
+    height: 30px;
+    width: 50px;
+    border-radius: 30px;
+    border: 1px solid black;
+    margin-top: 2px;
+    padding: 5px;
+    margin-left: 100px;
+    padding: 9px;
+    font-weight: bolder;
+    
+}
+
+.guest_content2 label{
+    width: 50%;
+    color: rgb(68, 33, 7);
+    font-weight: bold;
+    margin: 5px 0;
+    font-family: "Source Serif Pro";
+    font-size: 20px;
+}
+
+.guest_content2 input{
+    height: 30px;
+    width: 50px;
+    border-radius: 30px;
+    border: 1px solid black;
+    margin-top: 2px;
+    padding: 5px;
+    margin-left: 110px;
+    padding: 9px;
+    font-weight: bolder;
+    
+}
+
+.guest_content3 label{
+    width: 50%;
+    color: rgb(68, 33, 7);
+    font-weight: bold;
+    margin: 5px 0;
+    font-family: "Source Serif Pro";
+    font-size: 20px;
+}
+
+.guest_content3 input{
+    height: 30px;
+    width: 50px;
+    border-radius: 30px;
+    border: 1px solid black;
+    margin-top: 2px;
+    padding: 5px;
+    margin-left: 64px;
+    padding: 9px;
+    font-weight: bolder;
+    
+}
+
+.guest_content4 label{
+    width: 50%;
+    color: rgb(68, 33, 7);
+    font-weight: bold;
+    margin: 5px 0;
+    font-family: "Source Serif Pro";
+    font-size: 20px;
+}
+
+.guest_content4 input{
+    height: 30px;
+    width: 50px;
+    border-radius: 30px;
+    border: 1px solid black;
+    margin-top: 2px;
+    padding: 5px;
+    margin-left: 64px;
+    padding: 9px;
+    font-weight: bolder;
+    
+}
+
+.guest_content5 label{
+    width: 50%;
+    color: rgb(68, 33, 7);
+    font-weight: bold;
+    margin: 5px 0;
+    font-family: "Source Serif Pro";
+    font-size: 20px;
+}
+
+.guest_content5 input{
+    height: 30px;
+    width: 50px;
+    border-radius: 30px;
+    border: 1px solid black;
+    margin-top: 2px;
+    padding: 5px;
+    margin-left: 130px;
+    margin-bottom: 20px;
+    padding: 9px;
+    font-weight: bolder;
+    
+}
+
+
+
+
+/*guests section styles end*/
+
+/*duration section styles*/
+
+
+#background_5{
+    justify-content: center;
+    align-items: center;
+    display: block;
+    background-image:linear-gradient(rgba(109,50,0),rgba(212,149,70)) ;
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    font-family:"Source Serif Pro" ;
+}
+
+#sub_heading3 h3{
+    font-family:"Source Serif Pro";
+    font-size: 30px;
+    font-weight: bolder;
+    color: whitesmoke;
+    background-color:rgb(60, 4, 58) ;
+    padding: 1px;
+    border-radius: 50px;
+    width: 200px;
+    text-align: center;
+}
+
+
+
+#duration{
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+#duration h6{
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+.para_7 p{
+    text-align: center;
+    border-bottom: 2px solid rgba(109,50,0) ;
+    color: rgb(60, 4, 58);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.para_3 p{
+    font-size:20px ;
+    margin-top: 10px;
+    font-weight: bold;
+    color: rgb(60, 4, 58);
+    background-color: rgb(224, 219, 219);
+    padding: 5px;
+}
+
+.para_4 p{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 100px;
+    color: black ;
+}
+
+.para_5 span{
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.para_5 p{
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.para_6 p{
+    font-size:20px ;
+    margin-top: 20px;
+    font-weight: bold;
+    color: rgb(60, 4, 58);
+    background-color: rgb(224, 219, 219);
+    padding: 5px;
+}
+
+.select_time select{
+    margin-top: 10px;
+    padding: 10px;
+    width: 50%;
+    border-radius: 20px;
+    margin-left: 150px;
+    font-family:"Source Serif Pro" ;
+    font-size: 16px;
+    color: rgba(109,50,0);
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*duration section styles end*/
+
+/*Summary table styles*/
+
+#table_background{
+    background-image:linear-gradient(rgba(109,50,0),rgba(212,149,70)) ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    font-family: "Source Serif Pro" ;
+}
+
+#summary_table{
+   text-align: center;
+   background-color: white;
+   padding: 30px;
+   border-radius: 20px;
+   margin-top: 10px;
+}
+
+#summary_table caption{
+    font-size: 25px;
+    font-weight: bold;
+    color:rgb(60, 4, 58);
+    
+    
+}
+
+table tr{
+    margin-top: 10px;
+    font-size: 20px;
+    background-color:rgb(224, 219, 219) ;
+    border-radius: 20px;
+    border : 2px solid rgb(60, 4, 58); 
+}
+
+#sl-adult, #sl-child, #foreigner-adult, #foreigner-child, #infant{
+    text-align: left;
+}
+table tr th{
+    text-align: left; 
+    padding: 10px;
+}
+
+#total_price{
+    text-align: right;
+    padding: 10px;
+}
+
+
+
+table tr td{
+    border : 2px solid rgb(60, 4, 58);
+    text-align: right;
+}
+
+#ticket_charges,#amount_cell{
+   background-color:rgb(60, 4, 58) ; 
+   color: rgb(224, 219, 219);
+   
+}
+
+.button_container3{
+    margin: 15px 0;
+}
+.button_container3 a{
+    text-decoration: none;
+}
+.button_container3 button{
+    width: 400px;
+    margin-top: 30px;
+    margin-left: 550px;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: rgb(240, 198, 120);
+    border: none;
+    border-radius: 10px;
+    background:  linear-gradient( 180deg ,rgb(139,63,0),black);
+    font-family: "Source Serif Pro" ;
+    cursor: pointer;
+}
+
+
+#purchaseButton:hover{
+        background: linear-gradient( 360deg, rgb(139,63,0),black);
+       
+    
+    
+}
+/* @meadia styles for mobile phones */
+@media screen and(max-width:700px) {
+    #background{
+        width: 100%;
+    }
+}
+
+@media screen and ( max-width: 700px) {
+    nav h1 {
+        margin-top: 20px;
+        font-size: 17px;
+        float: left;
+        display: block;
+        margin-left: 20px;
+
+    }
+  }
+
+  @media screen and ( max-width: 700px) {
+    #menu ul {
+    float: right;
+    margin-right: 120px;
+      display: block;
+      font-size: 15px;
+      background-image: linear-gradient(rgba(77, 70, 70, 0.5),rgba(77, 70, 70, 0.5));
+      text-align: center;
+
+
+    }
+   
+  }
+
+  @media screen and ( max-width: 700px){
+    h2{
+        font-size: 50px;
+        margin-right: 40px;
+        margin-top: 170px;
+    }
+    #calendar_background{
+        float: right;
+        margin-right: 20px;
+        width: 300px;
+        justify-content: center;
+        font-size: 15px;
+        margin-right: 1px;
+        margin-top: 30px;
+        height: 400px;
+        width: 300px;
+        font-weight: lighter;
+    }
+    .calendar-container {
+        width: 300px;
+        font-size: 15px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
+
+    }
+    #background_6{
+        font-size: 15px;
+        float: right;
+        margin-right: 20px;
+        width: 350px;
+    }
+    #sub_heading1 h3{
+        font-size: 20px;
+        font-weight: lighter;
+        float: right;
+        margin-right: 100px;
+    }
+    .date_heading h5{
+        font-size: 20px;
+    
+    }
+
+    #para_1 p{
+        font-size: 17px;
+    }
+    
+
+    #calendar tr{
+        font-size: 10px;
+        width: 300px;
+        padding: 2px;
+    }
+
+    #calendar tr td{
+        font-size: 10px;
+        width: 300px;
+        padding: 2px;
+        text-align: center;
+
+    }
+
+
+
+    #button{
+        display: flex;
+    }
+    #current-month{
+        margin-left: 50px;
+    }
+    #next-month{
+        margin-left: 50px;
+    }
+
+  }
+
+  @media screen and ( max-width: 700px){
+    #guests_section{
+        width: 380px;
+        display: block;
+        margin-top: 100px;
+        float: right;
+        margin-right: 10px;
+    }
+    #sub_heading2 h3{
+        font-size: 20px;
+        font-weight: lighter;
+    }
+    .heading_2 h5{
+        font-size: 20px;
+    }
+    .para_2 p{
+        font-size: 17px;
+    }
+
+    .guest_content1, .guest_content2, .guest_content3, .guest_content4, .guest_content5{
+        font-size: 17px;
+        text-align: left;
+        margin-left: 30px;
+        display: flex;
+    }
+    .guest_content1 label,.guest_content2 label,.guest_content3 label,.guest_content4 label,.guest_content5 label{
+        font-size: 17px;
+    }
+    .guest_content1 input
+    {
+        margin-left: 77px;
+    }.guest_content2 input
+    {
+        margin-left: 77px;
+    }.guest_content3 input
+    {
+        margin-left: 75px;
+    }.guest_content4 input
+    {
+        margin-left: 75px;
+    }
+    .guest_content5 input{
+    margin-left: 77px;
+    }
+
+    }
+
+    @media screen and ( max-width: 700px){
+        #background_5{
+            width: 380px;
+            display: block;
+            margin-top: 50px;
+            float: right;
+            margin-right: 10px;
+        }
+        #sub_heading3 h3{
+            font-size: 20px;
+            font-weight: lighter;
+        }
+        #duration h6{
+            font-size: 20px;
+        }
+
+        .para_3 p{
+            font-size:17px;
+        }
+
+        .para_4 p{
+            font-size: 15px;
+            margin-left: 20px;
+            margin-right: 20px;
+    
+        }
+        .para_6 p{
+            font-size: 20px;
+        }
+        .select_time{
+            float: right;
+            margin-right: 20px;
+            width: 350px;
+        }
+    }
+
+
+    @media screen and ( max-width: 700px){
+        #table_background {
+            width: 380px;
+            display: block;
+            margin-top: 50px;
+            float: right;
+            margin-right: 10px;
+        }
+    }
+
+    @media screen and ( max-width: 700px){
+        .button_container3 button{
+            font-size: 17px;
+            width: 200px;
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+    }
+
+    @media screen and ( max-width: 700px){
+        #summary_table caption {
+            font-size: 20px;
+        } 
+        table tr{
+            font-size: 15px;
+        }
+    }
+
+    /* meadia styles for tablets */
+
+    @media screen and (min-width:710px) and (max-width:1000px){
+        nav h1 {
+            margin-top: 20px;
+            font-size: 20px;
+            float: left;
+            display: block;
+            margin-left: 20px;
+    
+        }
+      
+        #menu ul {
+            float: right;
+             margin-right: 120px;
+          display: inline-flex;
+          font-size: 17px;
+          background-image: linear-gradient(rgba(77, 70, 70, 0.5),rgba(77, 70, 70, 0.5));
+          text-align: center;
+    
+    
+        }
+       
+        h2{
+            font-size: 70px;
+            margin-right: 40px;
+            margin-top: 170px;
+        }
+
+        #background_6{
+            width: 550px;
+            margin-left: 200px;
+            margin-right: 100px;
+        }
+
+        #guests_section{
+            width: 550px;
+            margin-left: 200px;
+        }
+
+        #background_5{
+            width: 550px;
+            margin-left: 200px;
+        }
+        .para_4{
+            text-align: left;
+            margin-left: 10px;
+        }
+
+        #table_background{
+            width: 550px;
+            margin-left: 200px;
+        }
+
+        #purchaseButton{
+            margin-left: 280px;
+        }
+    }
+
+
+    /*footer styles*/
+    
+footer h1{
+    color: black;
+    font-size: 30px;
+    font-family:Rock Salt,Macondo ;
+    font-weight: bold;  
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+ footer{
+    margin-top: 200px;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to right,rgb(65, 28, 1), rgb(60, 4, 58));
+    border-top-right-radius:125px ;
+}
+
+
+#details{
+    color: black;
+    font-family: 'Source Serif Pro';
+    font-weight: bold;
+    
+}
+#symbols img{
+    border: transparent;
+}
+
+#footer_bottom{
+    margin-top: 15px;
+    color: #fff;
+    margin-bottom: 15px;
+    background: linear-gradient(to left,rgb(65, 28, 1), rgb(60, 4, 58));;
+}

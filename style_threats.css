@@ -10,7 +10,7 @@
     min-height: 100vh;
     justify-content: center;
     position: relative;
-    background-image: url('./turtle8.jpg') ;
+    background-image: url('./images/turtle8.jpg') ;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -317,7 +317,7 @@ color: #000;
     min-height: 100vh;
     justify-content: center;
     position: relative;
-    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0.5)), url('./turtle8.jpg') ;
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0.5)), url('./images/turtle8.jpg') ;
     background-attachment: fixed;
     background-size: cover;
     color: whitesmoke;

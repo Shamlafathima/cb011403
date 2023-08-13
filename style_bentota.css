@@ -100,7 +100,7 @@ h2{
     margin-left: 70px;
     color: transparent;
     -webkit-text-stroke: 1px #fff;
-    background: url(./back3.jpg);
+    background: url(./images/back3.jpg);
     -webkit-background-clip : text;
     background-position: 0 0;
     animation: back 20s linear infinite;

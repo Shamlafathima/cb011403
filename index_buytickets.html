@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Tickets</title>
+    <link rel="stylesheet" href="./style_buytickets.css">
+</head>
+<body>
+    <div id="background">
+        <header>
+            <!--header section start-->
+            <nav>
+                <div id="logo">
+                    <a href="./home.html">
+                        <h1>Sea Turtle</h1>
+                    </a>
+                    
+                </div>
+            
+                <div id="menu">
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./index_buytickets.html">Tickets</a></li>
+                    <li><a href="#details">Details</a></li>
+                    <li><a href="#payment">Payment</a></li>
+                    <li><a href="#confirmation">Confirmation</a></li>
+                </ul>
+               </div>
+             </nav>
+              <!--header section end-->
+        </header>
+
+        <section>
+            <div id="main_heading">
+                <h2>
+                <center>
+                    <section>
+                        Buy Tickets
+                    </section>
+                </center>
+                </h2>
+            </div>
+        </section>
+
+
+        <!--calander section-->
+        <div id="background_6">
+
+            <div id="sub_heading1">
+                <h3>Dates</h3>
+            </div>
+    
+                 <div id="calendar_background">
+
+                    <div id="para_1">
+                        <div class="date_heading">
+                            <h5>When are you coming??</h5>
+                        </div>
+                        <p>
+                            "Secure your spot now for an enchanting and unforgettable day."
+                        </p>
+                    </div>
+                        <div id="button">
+                            <button id="prev-month">&lt</button>
+                            <button id="current-month">Current Month</button>
+                            <button id="next-month">&gt</button>
+                        </div>
+                     
+                    <div class="calendar-container">
+                        
+                        <div id="calendar"></div>
+                    </div>
+                   
+                </div>
+           
+               
+           
+        </div>
+
+       
+        
+<!--Guest section-->
+        <div id="guests_section">
+
+            <div id="sub_heading2">
+                <h3>Guests</h3>
+            </div>
+
+            <div id="background_4">
+                <div class="heading_2">
+                    <h5><br>How many tickets you wish to buy??</h5>
+                </div>
+    
+                <div class="para_2">
+                    <p>"Embark on an unforgettable journey with your loved ones, gathering family and friends for a remarkable experience."</p>
+                </div>
+    
+                <Div class="guest_content1">
+                    <label for="sl_adult">SL Adults</label>
+                    <input type="number" name="sl_adult" min="0" required>
+                </Div>
+                <Div class="guest_content2">
+                    <label for="sl_child">SL Child</label>
+                    <input type="number" name="sl_child" min="0" required>
+                </Div>
+                <Div class="guest_content3">
+                    <label for="foreign_adult">Foreign Adult</label>
+                    <input type="number" name="foreign_adult" min="0" required>
+                </Div>
+                <Div class="guest_content4">
+                    <label for="foreign_child">Foreign Child</label>
+                    <input type="number" name="foreign_child" min="0" required>
+                </Div>
+                <Div class="guest_content5">
+                    <label for="infant">Infant</label>
+                    <input type="number" name="infant" min="0" required>
+                </Div>
+            </div>
+          
+
+        </div>
+
+
+        <!--Duration section-->
+
+        <div id="background_5">
+
+            <div id="sub_heading3">
+                <h3>Duration</h3>
+            </div>
+            <div id="duration">
+                <h6>Schedule a time to visit the hatchery!!</h6>
+
+                <div class="para_7">
+                    <p>"Carve out time to journey with your beloved ones and savor the beauty of life."</p>
+                </div>
+                <div class="para_3">
+                    <p>
+                        The charges are calculated as follows:
+                    </p>
+                </div>
+
+                <div class="para_4">
+                    <p> ○ Charge per one Normal hour for Foreigner Adult - 10 USD</p>
+                    <p>○ Charge per one Peak hour for Foreigner Adult - 13 USD</p> 
+                    <p> ○ Charge per one Normal hour for Foreigner Child - 5 USD</p> 
+                    <p>○ Charge per one Peak hour for Foreigner Child - 8 USD</p>
+                    <p>○ Charge per one Normal hour for SL Adult - 4 USD</p>
+                    <p>○ Charge per one Peak hour for SL Adult - 6 USD</p> 
+                    <p>○ Charge per one Normal hour for SL Child - 2 USD</p>
+                    <p> ○ Charge per one Peak hour for SL Child - 3 USD</p>  
+                    <p>○ Infants (SL or Foreigner) (under 4 years) entrance is completely free</p>
+                </div>
+
+                <div class="para_5">
+                    <p>
+                        <span>Note: </span>Please note that every day from <span>10.00 am to 1.00 pm</span> and from <span>3.00 pm to 6.00 pm</span> will
+                        be considered as <span> Peak hours.</span>
+                    </p>
+                </div>
+
+                <div class="time">
+                    <div class="para_6">
+                        <p>Select the ideal timeframe and start an unforgettable journey!</p>
+                    </div>
+
+                    <div class="select_time">
+                        <select required multiple>
+                            <option selected class="selected">Pick a Time</option>
+                            <option>07:00 am - 08:00 am</option>
+                            <option>08:00 am - 09:00 am</option>
+                            <option>09:00 am - 10:00 am</option>
+                            <option>10:00 am - 11:00 am</option>
+                            <option>11:00 am - 12:00 pm</option>
+                            <option>12:00 pm - 01:00 pm</option>
+                            <option>01:00 pm - 02:00 pm</option>
+                            <option>02:00 pm - 03:00 pm</option>
+                            <option>03:00 pm - 04:00 pm</option>
+                            <option>04:00 pm - 05:00 pm</option>
+                            <option>05:00 pm - 06:00 pm</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+       <!--Summary Table-->
+            <div id="table_background">
+                <div id="summary_table">
+                    <table>
+                        <caption>- SUMMARY TABLE -</caption>
+                        <div id="table_start">
+                            <tr>
+                                <th>Date</th>
+                                <th id="current-date"></th>
+                            </tr>
+                            <tr>
+                                <th>Time</th>
+                                <th id="selected_time">07.00 am - 08.00 am</th>
+                            </tr>
+            
+                            <tr>
+                                <th>Duration</th>
+                                <th id="selected_duration">1 hour (Normal 1 and Peak 0)</th>
+                            </tr>
+            
+                            <tr id="ticket_charges">
+                                <th>Tickets</th>
+                                <th>Charges</th>
+                            </tr>
+                            <tr>
+                                <td id="sl-adult"></td>
+                                <td id="sl_adult_ticketprice">$0</td>
+                            </tr>    
+                            <tr>
+                                
+                                <td id="sl-child"></td>
+                                <td id="sl_child_ticketprice">$0</td>
+                            </tr>
+                            <tr>
+                                
+                                <td id="foreigner-adult">1 Foreign Adult</td>
+                                <td id="foreign_adult_ticketprice">$10</td>
+                            </tr>
+                            <tr>
+                                
+                                <td id="foreigner-child"></td>
+                                <td id="foreign_child_ticketprice">$0</td>
+                            </tr>
+                            <tr>
+                                
+                                <td id="infant"></td>
+                                <td id="infant_ticketprice">$0</td>
+                            </tr>
+                            <tr id="amount_cell">
+                                <th id="total_tag">Total Payable</th>
+                                <th id="total_price">$10</th>
+                            </tr>
+                        </div>
+                       
+                    </table>
+                </div>
+              
+        
+            </div>
+
+           
+      
+       
+
+        <div class="button_container3">
+            <button id="purchaseButton" disabled>Continue with purchase</button>
+
+        </div>
+
+      <!--footer-->  
+        <footer>
+            <div id="footer_part">
+                <div id="logo">
+                    <center>
+                        <h1> Sea Turtle</h1>
+                    </center>
+                </div>
+                
+                <div id="details">
+                    <center>
+                        <p id="name">Fathima Shamla</p>
+                        <p id="address">A/21, Mariyawatte, Gampola </p>
+                        <p id="email">fathimashamla247@gmail.com</p>
+                        <p id="number">0774345350</p>
+                    </center>
+                   
+                </div>
+                <div id="symbols">
+                    <center>
+                        <a href=""><img src="./images/instagram.png" alt="" width="30" height="30"></a>
+                        <a href=""><img src="./images/facebook.png" alt="" width="30" height="30"></a>
+                    </center>
+                  
+                </div>
+                <div id="footer_bottom">
+                    <center>
+                        <p>Copyright &copy; 2023; Designed by Shamla</p>
+                    </center>
+                   
+                </div>
+               
+            </div>
+    </footer>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+    </div>
+    
+   <script src="./main_buytickets.js"></script>
+</body>
+</html>

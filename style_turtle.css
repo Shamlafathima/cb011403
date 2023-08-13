@@ -11,7 +11,7 @@
     min-height: 100vh;
     justify-content: center;
     position: relative;
-    background-image:url('./turtle4.jpg') ;
+    background-image:url('./images/turtle4.jpg') ;
     background-attachment: fixed;
     background-size: cover;
 }

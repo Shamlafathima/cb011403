@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="./style_details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"></script>
+
+</head>
+<body>
+    <div id="background">
+        <header>
+            <!--header section start-->
+            <nav>
+                <div id="logo">
+                    <a href="./home.html">
+                        <h1>Sea Turtle</h1>
+                    </a>
+                    
+                </div>
+            
+                <div id="menu">
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="#tickets">Tickets</a></li>
+                    <li><a href="./index_details.html">Details</a></li>
+                    <li><a href="#payment">Payment</a></li>
+                    <li><a href="#confirmation">Confirmation</a></li>
+                </ul>
+               </div>
+             </nav>
+              <!--header section end-->
+        </header>
+
+        <section>
+            <div id="main_heading">
+                <h2>
+                <center>
+                    <section>
+                        Buy Tickets
+                    </section>
+                </center>
+                </h2>
+            </div>
+        </section>
+
+
+<div id="background_0">
+
+<!--Summary Table-->
+    <div id="table_background">
+        <div id="summary_table">
+            <table>
+                <caption>- SUMMARY TABLE -</caption>
+                <div id="table_start">
+                    <tr>
+                        <th>Date</th>
+                        <th id="current-date"></th>
+                    </tr>
+                    <tr>
+                        <th>Time</th>
+                        <th id="selected_time">07.00 am - 08.00 am</th>
+                    </tr>
+    
+                    <tr>
+                        <th>Duration</th>
+                        <th id="selected_duration">1 hour (Normal 1 and Peak 0)</th>
+                    </tr>
+    
+                    <tr id="ticket_charges">
+                        <th>Tickets</th>
+                        <th>Charges</th>
+                    </tr>
+                    <tr>
+                        <td id="sl-adult"></td>
+                        <td id="sl_adult_ticketprice">$0</td>
+                    </tr>    
+                    <tr>
+                        
+                        <td id="sl-child"></td>
+                        <td id="sl_child_ticketprice">$0</td>
+                    </tr>
+                    <tr>
+                        
+                        <td id="foreigner-adult"></td>
+                        <td id="foreign_adult_ticketprice">$10</td>
+                    </tr>
+                    <tr>
+                        
+                        <td id="foreigner-child"></td>
+                        <td id="foreign_child_ticketprice">$0</td>
+                    </tr>
+                    <tr>
+                        
+                        <td id="infant">Infant</td>
+                        <td id="infant_ticketprice">$0</td>
+                    </tr>
+                    <tr id="amount_cell">
+                        <th id="total_tag">Total Payable</th>
+                        <th id="total_price">$10</th>
+                    </tr>
+                </div>
+               
+            </table>
+        </div>
+      
+
+    </div>
+
+    <!--Details form-->
+    <section>
+        <div id="background_2">
+            <div class="container">
+                <form action="" method="post">
+                    <h3>Enter your Details</h3>
+                    <div class="content">
+
+                        <div class="input_box">
+                            <label for="name"> Full Name</label>
+                            <p>Same as on your NIC</p>
+                            <input type="text" placeholder="Enter full name" name="name" required>
+                        </div>
+
+                        <div class="input_box">
+                            <label for="phone">Mobile Number</label>
+                            <p>We may reach out for booking updates here over SMS/Whatsapp</p>
+
+                            <div class="country_codes">
+                                    <input type="tel" id="phone" placeholder="Enter a valid phone number" name="phone" required>
+                                    <span id="country-code"></span> 
+                                     
+                            </div>
+
+                            <p id="phone-validation-msg" class="validation-msg"></p>
+                        </div>
+
+                        <div class="input_box">
+                            <label for="email"> Email</label>
+                            <p>We'll send your tickets here</p>
+                            <input type="email" id="email" placeholder="Enter your valied email address" name="email" required>
+                            <p id="email-validation-msg" class="validation-msg"></p>
+                        </div>
+
+                        <div class="input_box">
+                            <label for="confirm_email">Confirm Email</label>
+                            <p>Just to ensure we've got this right</p>
+                            <input type="email" id="confirm_email" placeholder="Confirm your email address" name="confirm_email" required>
+                            <p id="confirm-email-validation-msg" class="validation-msg"></p>
+                        </div>
+
+                        <div class="input_box">
+                            <label for="gender">Gender</label>
+                            <select id="gender">
+                                <div id="gender_select">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </div>
+                              
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="button_container">
+                        <button>Continue with purchase</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+       
+    </section>
+
+   
+</div>
+
+
+<!--footer section-->
+<footer>
+    <div id="footer_part">
+        <div id="logo">
+            <center>
+                <h1> Sea Turtle</h1>
+            </center>
+        </div>
+        
+        <div id="details">
+            <center>
+                <p id="name">Fathima Shamla</p>
+                <p id="address">A/21, Mariyawatte, Gampola </p>
+                <p id="email">fathimashamla247@gmail.com</p>
+                <p id="number">0774345350</p>
+            </center>
+           
+        </div>
+        <div id="symbols">
+            <center>
+                <a href=""><img src="./images/instagram.png" alt="" width="30" height="30"></a>
+                <a href=""><img src="./images/facebook.png" alt="" width="30" height="30"></a>
+            </center>
+          
+        </div>
+        <div id="footer_bottom">
+            <center>
+                <p>Copyright &copy; 2023; Designed by Shamla</p>
+            </center>
+           
+        </div>
+       
+    </div>
+</footer>
+       
+       
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+    </div>
+    <script src="./main_details.js"></script>
+</body>
+</html>
