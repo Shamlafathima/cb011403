@@ -12,7 +12,7 @@
     min-height: 100vh;
     justify-content: center;
     position: relative;
-    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0.5)),url('./images/tutle.jpg') ;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0.5)),url('./tutle.jpg') ;
     background-attachment: fixed;
     background-size: cover;
     

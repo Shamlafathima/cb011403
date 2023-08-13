@@ -15,7 +15,7 @@ body{
     min-height: 100vh;
     justify-content: center;
     position: relative;
-    background-image: url('./images/turtle65.jpg') ;
+    background-image: url('./turtle65.jpg') ;
     background-attachment: fixed;
     background-size: cover;
     
